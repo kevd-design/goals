@@ -35,7 +35,7 @@ This document is for active journalling of personal and professional goals, usin
 **Top 3 Goals:**
 - Define short-term and medium-term goals for Q2–Q3.
 - Map current project (web app) milestones to weekly objectives.
-- Review Inclusable business plan and 3Sixty Scope of Work.
+- Review secret startup documents.
 - Prepare to add new components by reviewing accessible image pattern for DRYness.
 - Begin work on "Project" component (see visual reference).
 
@@ -101,9 +101,5 @@ This document is for active journalling of personal and professional goals, usin
 - Remaining milestones: finalize copy, test interactivity, CMS population, and deployment decision.
 - Delivery window under consideration for June 2025.
 
-### Inclusable Startup
-- Collaborative business venture with Sercan Kum.
-- Exploring tools like Slack; ownership concerns with Discord and Google.
-- Needs: business plan clarity, monetization strategy, funding lead.
-- Tasks underway: review Business Plan and Scope of Work (3Sixty).
-- Goals: stay under 10 people, build target contact list, possibly involve MSI contract.
+### Secret Startup
+(Secret for now)
