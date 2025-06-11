@@ -1,0 +1,11 @@
+title: My Goals
+description: Personal and professional goals tracking
+markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
