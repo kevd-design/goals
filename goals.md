@@ -8,24 +8,33 @@ This document is for active journalling of personal and professional goals, usin
 
 ### 2025-06-11
 **Goal(s):**
-- Finish goal setting by 11 a.m.
-- Finish implementing MobileNav with newest colorMap and Adaptive Color features
-- Update desktop Nav with the same features
-- Ensure the hero section has a rounded bottom edge as shown in the mockup (minor styling task)
+- ~~Finish goal setting by 11 a.m.~~ (Extended - spent day configuring goal setting system)
+- Implement MobileNav with newest colorMap and Adaptive Color features
+- ~~Update desktop Nav with the same features~~ (Moved to 2025-06-12)
+- ~~Ensure the hero section has a rounded bottom edge as shown in the mockup~~ (Moved to 2025-06-12)
 
-**Completed:** [Pending]
+**Completed:**
+- Set up goals tracking system with GitHub Pages
+- Configured Jekyll for static Markdown rendering
+- Established DNS and proper website infrastructure
 
 **Notes / Reflections:**
+Spent more time than anticipated setting up the goal tracking infrastructure. This should pay dividends in the long run by providing a stable, version-controlled, and accessible system for tracking my progress across devices and contexts.
 
-### 🕒 Time-Based Schedule
+### 🕒 Revised Time-Based Schedule
 | Time            | Task                                                                 |
 |-----------------|----------------------------------------------------------------------|
-| 08:00 – 11:00   | Finish goal setting                                                  |
-| 11:00 – 12:00   | Implement MobileNav with colorMap + Adaptive Color features         |
-| 12:00 – 13:00   | Lunch break                                                          |
-| 13:00 – 13:10   | Add rounded bottom to hero section (minor polish)                   |
-| 13:10 – 15:10   | Update desktop Nav with matching features                           |
-| 15:10+          | Break / review / prep image pattern for next component              |
+| 08:00 – 16:00   | Setting up goal tracking system (GitHub Pages + Jekyll)              |
+| 16:00 – 18:00   | Implement MobileNav with colorMap + Adaptive Color features         |
+
+### 2025-06-12 (Added)
+**Goal(s):**
+- Complete MobileNav implementation (if not finished on 2025-06-11)
+- Update desktop Nav with matching features
+- Ensure the hero section has a rounded bottom edge as shown in the mockup
+- Begin work on "Project" component if time permits
+
+**Notes / Reflections:**
 
 ---
 
@@ -42,6 +51,7 @@ This document is for active journalling of personal and professional goals, usin
 **Completed:** [Pending]
 
 **Notes / Reflections:**
+Set up an effective goal tracking system which will help monitor progress on these weekly goals.
 
 ---
 
@@ -57,6 +67,7 @@ This document is for active journalling of personal and professional goals, usin
 - Develop a goal journaling habit (3+ entries/week)
 
 **Progress Review:**
+✓ Made significant progress on goal journaling infrastructure (2025-06-11)
 
 ---
 
@@ -79,9 +90,11 @@ This document is for active journalling of personal and professional goals, usin
 ## ✅ Goal History Log
 
 ### 2025-06-11
-- 🎯 *Define short and medium term goals before 10 a.m.* — ⏳ Pending
+- 🎯 *Define short and medium term goals before 10 a.m.* — ⏳ Delayed due to goal infrastructure setup
+- 🔧 *Set up goal tracking system using GitHub Pages* — ✅ Completed
 
 **Notes:**
+Prioritized building proper infrastructure for goal tracking which took most of the day.
 
 ---
 
