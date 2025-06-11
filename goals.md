@@ -21,6 +21,7 @@ This document is for active journalling of personal and professional goals, usin
   Spent more time than anticipated setting up the goal tracking infrastructure. This should pay dividends in the long run by providing a stable, version-controlled, and accessible system for tracking my progress across devices and contexts.
 
   **🕒 Revised Time-Based Schedule:**
+  
   | Time          | Task                                                                      |
   | ------------- | ------------------------------------------------------------------------- |
   | 08:00 – 16:00 | Set up goal tracking system (GitHub Pages + Jekyll)                       |
@@ -38,6 +39,7 @@ This document is for active journalling of personal and professional goals, usin
 - **Notes / Reflections:**
 
   **🕒 Time-Based Schedule (Planned):**
+  
   | Time          | Task                                               |
   | ------------- | -------------------------------------------------- |
   | 08:00 – 12:00 | Continue and complete MobileNav implementation     |
