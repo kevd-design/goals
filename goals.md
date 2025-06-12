@@ -1,3 +1,4 @@
+
 ## 🎯 Goal Journal
 
 This document is for active journalling of personal and professional goals, using a structured format to enable clarity, reflection, and accountability.
@@ -6,24 +7,31 @@ This document is for active journalling of personal and professional goals, usin
 
 ### 🗓️ Daily Goals
 
-#### 2025-06-12 (Planned)
+#### 2025-06-12
 
-- **Goal(s):**
+**New Goals:**
+  - Create simplify plan to refactor the code
+  - Find a clean way to prevent unaccessible image edits in Sanity, while accessible image features are under development
+  - Find a clean way to build the simplified app without losing progress made on the accessible image feature. (New webapp branch?)
 
-  - Complete MobileNav implementation (continued from June 11)
+**Failed Goals**
+  - Complete MobileNav implementation (continued from June 11) - [Not completed by noon - see Fail Log](#-fail-to-succeed-log)
+
+**Postponed Goals**
   - Update desktop Nav with matching features
   - Ensure the hero section has a rounded bottom edge as shown in the mockup
-  - Begin work on “Project” component if time permits
+  - Begin work on "Project" component if time permits
 
-🕒 Time-Based Schedule (Planned):
+**Reflection**
+  - I've tried for the last few days to implement the MobileNav based on the Accessible Image features. Unfortunately it's too complex to transition and it's limiting my ability to finish at least a basic webapp by end of June.
 
-| Time          | Task                                               |
-| ------------- | -------------------------------------------------- |
-| 08:00 – 12:00 | Continue and complete MobileNav implementation     |
-| 12:00 – 13:00 | Lunch break                                        |
-| 13:00 – 14:30 | Update desktop Nav with colorMap + Adaptive Color  |
-| 14:30 – 15:00 | Add rounded bottom to Hero section                 |
-| 15:00 – 17:00 | Begin building Project component (if time permits) |
+🕒 Time-Based Schedule (Revised):
+
+| Time          | Task                                                              |
+| ------------- | ----------------------------------------------------------------- |
+| 08:00 – 12:00 | Continue and complete MobileNav implementation ❌ (see [Fail Log](#-fail-to-succeed-log)) |
+| 12:00 – 13:00 | Lunch break                                                       |
+| 13:00 – 17:00 | 🛠️ Plan the pivot to simplifying the webapp. |
 
 ---
 
@@ -105,13 +113,9 @@ This document is for active journalling of personal and professional goals, usin
 - Desktop and mobile UI mockups complete.
 - Core pages: Home, Projects, Project Detail, About, Reviews, Contact.
 - Current development tasks:
-  - Implement MobileNav with newest colorMap and Adaptive Color features (in progress)
-  - Apply same enhancements to desktop Nav
-  - Ensure hero section has a rounded bottom edge, as shown in the mockup
-  - Prepare for new component development by reviewing accessible image pattern for clarity and DRYness
-  - Begin building the “Project” component using shared visual references
-- Remaining milestones: finalize copy, test interactivity, CMS population, and deployment decision.
-- Delivery window under consideration for June 2025.
+  - Releasing a simplified version where clients can edit text and images on their website, except ones that affect accessibility.
+  - Once released, based on user needs, consider finishing development of auto-accessible text over images.
+- Delivery window for v1 June 2025.
 
 #### Goal Tracking Initiative
 
@@ -165,3 +169,38 @@ This document is for active journalling of personal and professional goals, usin
 | ------------- | ------------------------------------------------------------------------- |
 | 08:00 – 16:00 | Set up goal tracking system (GitHub Pages + Jekyll)                       |
 | 16:00 – 18:00 | Implement MobileNav with colorMap + Adaptive Color features (in progress) |
+
+---
+
+## 📘 Fail to Succeed Log
+
+### 🗓️ June 12, 2025
+
+#### ❌ Missed Goal
+
+**Implement MobileNav by 12:00 p.m.**
+
+#### 🔍 What I Tried
+
+- Investigated why only the first 3 nav buttons were receiving adaptive backgrounds.
+- Compared MobileNav with the working Hero component to uncover architectural differences.
+- Identified a performance bottleneck: image accessibility recalculations on every resize and page load.
+- Explored why the debug panel showed `text-white` while rendered text appeared black — traced it to multi-stage logic in AdaptiveText.
+- Considered server-side processing for image accessibility using Sanity.
+
+#### 🎓 What I Learned
+
+- The adaptive image processing system is too brittle for MVP — leads to visual flicker and unnecessary re-rendering.
+- Debugging dynamic styles is harder with layered decision-making in component logic.
+- Server-side processing could reduce client overhead, but adds complexity too early.
+
+#### 🔄 Pivot Strategy
+
+- **Short-Term:** Phase out dynamic image accessibility for now. Use pre-selected images with hardcoded settings.
+- **Launch Plan:** Restrict user-uploaded images in early release.
+- **Long-Term:** Reintroduce advanced features post-launch with server-side analysis.
+- **Core Change:** Shift focus to completing essential app functionality with simplified structure.
+
+#### 🧭 Reframed Goal
+
+**Finish webapp by June 30 with simplified, stable architecture.**
