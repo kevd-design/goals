@@ -37,8 +37,6 @@ This document is for active journalling of personal and professional goals, usin
 
 ---
 
-### 📅 Weekly Goals
-
 
 ### 📅 Weekly Goals
 
