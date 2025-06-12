@@ -7,48 +7,53 @@ This document is for active journalling of personal and professional goals, usin
 
 ### 🗓️ Daily Goals
 
-#### 2025-06-12
+#### 2025-06-13
 
 **New Goals:**
-  - Create simplify plan to refactor the code
-  - Find a clean way to prevent unaccessible image edits in Sanity, while accessible image features are under development
-  - Find a clean way to build the simplified app without losing progress made on the accessible image feature. (New webapp branch?)
+  - ⭐ Implement MVP approach with nearly static site (pulling only projects from Sanity)
+  - Simplify hero section to use static images and text
+  - Simplify MobileNav to use static content
+  - Begin building Projects module with Sanity integration
+  - Clean up complex code that is no longer needed
+  
+**Focus Shift:**
+  - Pivoting from full CMS-driven approach to a simpler MVP with limited Sanity integration
+  - Prioritizing completion over advanced features like adaptive colors and accessibility automation
 
-**Failed Goals**
-  - Complete MobileNav implementation (continued from June 11) - [Not completed by noon - see Fail Log](#-fail-to-succeed-log)
+**Reflection:**
+  - Yesterday's planning revealed that the complexity of the current architecture is slowing progress
+  - A simplified approach will allow for faster delivery while maintaining core functionality
 
-**Postponed Goals**
-  - Update desktop Nav with matching features
-  - Ensure the hero section has a rounded bottom edge as shown in the mockup
-  - Begin work on "Project" component if time permits
+🕒 Time-Based Schedule:
 
-**Reflection**
-  - I've tried for the last few days to implement the MobileNav based on the Accessible Image features. Unfortunately it's too complex to transition and it's limiting my ability to finish at least a basic webapp by end of June.
+| Time          | Task                                                            |
+| ------------- | --------------------------------------------------------------- |
+| 08:00 – 12:00 | Simplify Hero and MobileNav to use static images and text       |
+| 12:00 – 13:00 | Lunch break                                                     |
+| 13:00 – 16:00 | Start building Projects module with Sanity integration          |
+| 16:00 – 17:00 | Clean up complex/unused code from previous approach             |
 
-🕒 Time-Based Schedule (Revised):
 
-| Time          | Task                                                              |
-| ------------- | ----------------------------------------------------------------- |
-| 08:00 – 12:00 | Continue and complete MobileNav implementation ❌ (see [Fail Log](#-fail-to-succeed-log)) |
-| 12:00 – 13:00 | Lunch break                                                       |
-| 13:00 – 17:00 | 🛠️ Plan the pivot to simplifying the webapp. |
 
 ---
 
 ### 📅 Weekly Goals
 
-#### Week of 2025-06-10
 
-- **Goals:**
+### 📅 Weekly Goals
 
-  1. Define short-term and medium-term goals for July–September.
-  2. Map current project (web app) milestones to weekly objectives.
-  3. Review secret startup documents.
-  4. Prepare to add new components by reviewing accessible image pattern for DRYness.
-  5. Begin work on “Project” component (see visual reference).
-  6. Finish Vanta homepage by Friday.
+#### Week of 2025-06-10 (Updated)
+**Top 3 Goals:**
+- ✅ Define short-term and medium-term goals for Q2–Q3
+- ✅ Map current project (web app) milestones to weekly objectives
+- ⏳ Review secret startup documents
+- 🔄 **Revised:** Create simplified MVP of Vanta web app with static content and Sanity integration only for Projects
+- 🔄 **Revised:** Release MVP by end of June to allow client content management
 
-- **Completed:** [Pending]
+**Notes / Reflections:**
+Strategic shift to MVP approach will allow for faster delivery while meeting core client needs.
+
+- **Completed:**
 
 - **Notes / Reflections:**
   Set up an effective goal tracking system which will help monitor progress on these weekly goals.
@@ -145,6 +150,32 @@ This document is for active journalling of personal and professional goals, usin
 
 ### 🕘 Past Days
 
+#### 2025-06-12
+
+**New Goals:**
+  - Create simplify plan to refactor the code
+  - Find a clean way to prevent unaccessible image edits in Sanity, while accessible image features are under development
+  - Find a clean way to build the simplified app without losing progress made on the accessible image feature. (New webapp branch?)
+
+**Failed Goals**
+  - Complete MobileNav implementation (continued from June 11) - [Not completed by noon - see Fail Log](#-fail-to-succeed-log)
+
+**Postponed Goals**
+  - Update desktop Nav with matching features
+  - Ensure the hero section has a rounded bottom edge as shown in the mockup
+  - Begin work on "Project" component if time permits
+
+**Reflection**
+  - I've tried for the last few days to implement the MobileNav based on the Accessible Image features. Unfortunately it's too complex to transition and it's limiting my ability to finish at least a basic webapp by end of June.
+
+🕒 Time-Based Schedule (Revised):
+
+| Time          | Task                                                              |
+| ------------- | ----------------------------------------------------------------- |
+| 08:00 – 12:00 | Continue and complete MobileNav implementation ❌ (see [Fail Log](#-fail-to-succeed-log)) |
+| 12:00 – 13:00 | Lunch break                                                       |
+| 13:00 – 17:00 | 🛠️ Plan the pivot to simplifying the webapp. |
+
 #### 2025-06-11
 
 - **Goal(s):**
@@ -178,7 +209,7 @@ This document is for active journalling of personal and professional goals, usin
 
 #### ❌ Missed Goal
 
-**Implement MobileNav by 12:00 p.m.**
+**Implement MobileNav using accessibility feature**
 
 #### 🔍 What I Tried
 
