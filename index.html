@@ -4,29 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goal Journal</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3, h4 { margin-top: 24px; }
-        code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
-        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
-        hr { margin: 30px 0; border: 0; border-top: 1px solid #eee; }
-        .emoji { font-size: 1.2em; }
-        .task-list { list-style-type: none; padding-left: 20px; }
-        .task-list li { position: relative; padding-left: 24px; margin-bottom: 8px; }
-        .completed { color: #666; text-decoration: line-through; }
-        .new { font-weight: bold; }
-        .focus-shift { background-color: #f9f9f9; padding: 10px; border-left: 3px solid #4a5568; }
-        .reflection { font-style: italic; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2><span class="emoji">🎯</span> Goal Journal</h2>
@@ -42,17 +20,78 @@
     <p><strong>New Goals:</strong></p>
     <ul>
         <li><span class="emoji">⭐</span> Implement MVP approach with nearly static site (pulling only projects from Sanity)</li>
-        <li>Simplify hero section to use static images and text</li>
-        <li>Simplify MobileNav to use static content</li>
+        <li><span class="emoji">✅</span> Simplify hero section to use static images and text</li>
+        <li><span class="emoji">✅</span> Simplify MobileNav to use static content</li>
         <li>Begin building Projects module with Sanity integration</li>
-        <li>Clean up complex code that is no longer needed</li>
+        <li><span class="emoji">🔄</span> Clean up complex code that is no longer needed (in progress)</li>
     </ul>
+    
+    <div class="journal-entry">
+        <p><strong>Handwritten Journal Entry (10:00 AM):</strong></p>
+        <p><em>"To go full simple, or part-way simple?"</em></p>
+        
+        <p>I've been weighing the tradeoffs between full simplification and a partial approach:</p>
+        <ul>
+            <li>Full simplification would get the project out the door faster</li>
+            <li>This means making the hero static, even though most content is served by the headless CMS</li>
+            <li>For images, it makes sense to still pull from Sanity since their content delivery network would be superior to fully static images</li>
+            <li>I should keep most of the Sanity implementation as-is for images</li>
+            <li>For text that's already configured in the schema, it would be easier to keep using it but make it editable only by myself</li>
+            <li>So my approach is "more simple, but not fully static"</li>
+            <li>The main goal is to disconnect the hero from color mapping and just render the background image as-is</li>
+            <li>I can keep the optimized image and caching functionality, but don't need the decoding or ImageConfigurer components</li>
+        </ul>
+        
+        <p>This hybrid approach will maintain performance benefits while reducing complexity.</p>
+    </div>
     
     <div class="focus-shift">
         <p><strong>Focus Shift:</strong></p>
         <ul>
             <li>Pivoting from full CMS-driven approach to a simpler MVP with limited Sanity integration</li>
             <li>Prioritizing completion over advanced features like adaptive colors and accessibility automation</li>
+            <li>Adopting a hybrid approach: static rendering but with Sanity-sourced images for optimization</li>
+        </ul>
+    </div>
+    
+    <div class="progress-update">
+        <p><strong>Progress Update (Morning):</strong></p>
+        <ul>
+            <li><strong>Simplified the Hero Component</strong>
+                <ul>
+                    <li>Removed debug tools, color mapping, and accessibility features</li>
+                    <li>Maintained essential structure with ImageContainer, HeroBackground, and HeroContent</li>
+                    <li>Switched from adaptive to fixed black text color</li>
+                </ul>
+            </li>
+            <li><strong>Updated Component Props and Types</strong>
+                <ul>
+                    <li>Updated ImageContainerProps to remove unused parameters</li>
+                    <li>Fixed type compatibility issues between components</li>
+                    <li>Removed unused state variables like optimizedImageUrl in MobileNavigation</li>
+                </ul>
+            </li>
+            <li><strong>Applied the Hero Pattern to MobileNavigation</strong>
+                <ul>
+                    <li>Created a MobileNavigationBackground component following the HeroBackground pattern</li>
+                    <li>Simplified the MobileNavigation component to match Hero's structure</li>
+                    <li>Maintained the animation functionality for menu transitions</li>
+                </ul>
+            </li>
+            <li><strong>Fixed Image Sizing Issues</strong>
+                <ul>
+                    <li>Investigated why images weren't properly sized at certain breakpoints</li>
+                    <li>Updated components to ensure images render at proper dimensions</li>
+                    <li>Maintained responsive behavior while simplifying the code</li>
+                </ul>
+            </li>
+            <li><strong>Updated Types for Better Integration</strong>
+                <ul>
+                    <li>Added MobileNavigationBackgroundProps to navigation types</li>
+                    <li>Fixed type issues from 'any' to proper ImageObject types</li>
+                    <li>Ensured consistency between related components</li>
+                </ul>
+            </li>
         </ul>
     </div>
 
@@ -60,33 +99,40 @@
     <ul class="reflection">
         <li>Yesterday's planning revealed that the complexity of the current architecture is slowing progress</li>
         <li>A simplified approach will allow for faster delivery while maintaining core functionality</li>
+        <li>Making good progress on simplification while maintaining image optimization through Sanity</li>
+        <li>The hybrid approach (static content with Sanity-sourced images) offers the best balance between simplicity and performance</li>
     </ul>
 
-    <p><span class="emoji">🕒</span> <strong>Time-Based Schedule:</strong></p>
+    <p><span class="emoji">🕒</span> <strong>Time-Based Schedule (Updated):</strong></p>
 
     <table>
         <thead>
             <tr>
                 <th>Time</th>
                 <th>Task</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>08:00 – 12:00</td>
                 <td>Simplify Hero and MobileNav to use static images and text</td>
+                <td><span class="emoji">✅</span> Completed</td>
             </tr>
             <tr>
                 <td>12:00 – 13:00</td>
                 <td>Lunch break</td>
+                <td>-</td>
             </tr>
             <tr>
                 <td>13:00 – 16:00</td>
                 <td>Start building Projects module with Sanity integration</td>
+                <td>Upcoming</td>
             </tr>
             <tr>
                 <td>16:00 – 17:00</td>
                 <td>Clean up complex/unused code from previous approach</td>
+                <td>Upcoming (partly done in morning)</td>
             </tr>
         </tbody>
     </table>
