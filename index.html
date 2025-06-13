@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Journal</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4 { margin-top: 24px; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        hr { margin: 30px 0; border: 0; border-top: 1px solid #eee; }
+        .emoji { font-size: 1.2em; }
+        .task-list { list-style-type: none; padding-left: 20px; }
+        .task-list li { position: relative; padding-left: 24px; margin-bottom: 8px; }
+        .completed { color: #666; text-decoration: line-through; }
+        .new { font-weight: bold; }
+        .focus-shift { background-color: #f9f9f9; padding: 10px; border-left: 3px solid #4a5568; }
+        .reflection { font-style: italic; }
+    </style>
+</head>
+<body>
+    <h2><span class="emoji">🎯</span> Goal Journal</h2>
+
+    <p>This document is for active journalling of personal and professional goals, using a structured format to enable clarity, reflection, and accountability.</p>
+
+    <hr>
+
+    <h3><span class="emoji">🗓️</span> Daily Goals</h3>
+
+    <h4>2025-06-13</h4>
+
+    <p><strong>New Goals:</strong></p>
+    <ul>
+        <li><span class="emoji">⭐</span> Implement MVP approach with nearly static site (pulling only projects from Sanity)</li>
+        <li>Simplify hero section to use static images and text</li>
+        <li>Simplify MobileNav to use static content</li>
+        <li>Begin building Projects module with Sanity integration</li>
+        <li>Clean up complex code that is no longer needed</li>
+    </ul>
+    
+    <div class="focus-shift">
+        <p><strong>Focus Shift:</strong></p>
+        <ul>
+            <li>Pivoting from full CMS-driven approach to a simpler MVP with limited Sanity integration</li>
+            <li>Prioritizing completion over advanced features like adaptive colors and accessibility automation</li>
+        </ul>
+    </div>
+
+    <p class="reflection"><strong>Reflection:</strong></p>
+    <ul class="reflection">
+        <li>Yesterday's planning revealed that the complexity of the current architecture is slowing progress</li>
+        <li>A simplified approach will allow for faster delivery while maintaining core functionality</li>
+    </ul>
+
+    <p><span class="emoji">🕒</span> <strong>Time-Based Schedule:</strong></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Task</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:00 – 12:00</td>
+                <td>Simplify Hero and MobileNav to use static images and text</td>
+            </tr>
+            <tr>
+                <td>12:00 – 13:00</td>
+                <td>Lunch break</td>
+            </tr>
+            <tr>
+                <td>13:00 – 16:00</td>
+                <td>Start building Projects module with Sanity integration</td>
+            </tr>
+            <tr>
+                <td>16:00 – 17:00</td>
+                <td>Clean up complex/unused code from previous approach</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3><span class="emoji">📅</span> Weekly Goals</h3>
+
+    <h4>Week of 2025-06-10 (Updated)</h4>
+    <p><strong>Top 3 Goals:</strong></p>
+    <ul>
+        <li><span class="emoji">✅</span> Define short-term and medium-term goals for Q2–Q3</li>
+        <li><span class="emoji">✅</span> Map current project (web app) milestones to weekly objectives</li>
+        <li><span class="emoji">⏳</span> Review secret startup documents</li>
+        <li><span class="emoji">🔄</span> <strong>Revised:</strong> Create simplified MVP of Vanta web app with static content and Sanity integration only for Projects</li>
+        <li><span class="emoji">🔄</span> <strong>Revised:</strong> Release MVP by end of June to allow client content management</li>
+    </ul>
+
+    <p><strong>Notes / Reflections:</strong><br>
+    Strategic shift to MVP approach will allow for faster delivery while meeting core client needs.</p>
+
+    <hr>
+
+    <h3><span class="emoji">🧭</span> Context: Current Projects</h3>
+
+    <h4>Vanta Web App (Updated)</h4>
+
+    <ul>
+        <li>A custom marketing website for a local construction business.</li>
+        <li>Built with Next.js, Tailwind CSS, Sanity CMS, deployed on Vercel.</li>
+        <li><strong>Strategy Pivot:</strong> Moving to MVP approach with simplified architecture:
+            <ul>
+                <li>Most content will be static (not CMS-driven)</li>
+                <li>Only Projects section will pull from Sanity CMS</li>
+                <li>Advanced features like adaptive colors and auto-accessible text over images deferred to post-MVP</li>
+            </ul>
+        </li>
+        <li>Current development tasks:
+            <ul>
+                <li>Simplify Hero and Nav components to use static content</li>
+                <li>Build Projects module with Sanity integration</li>
+                <li>Clean up complex/unused code</li>
+            </ul>
+        </li>
+        <li>Delivery window for MVP: June 2025.</li>
+    </ul>
+
+    <h4>Goal Tracking Initiative</h4>
+
+    <ul>
+        <li>A structured journaling system to set and track personal and professional goals.</li>
+        <li>Daily goals are written with ChatGPT and archived to <a href="https://goals.kevd.design">goals.kevd.design</a>.</li>
+        <li>Each day's entry becomes a version-controlled snapshot, ensuring clarity and traceability.</li>
+        <li>Enables mobile, voice-based journaling and goal-setting during daily routines like walking the dog.</li>
+        <li>Acts as both a reference for ChatGPT and a durable accountability mechanism.</li>
+    </ul>
+
+    <h4>Secret Startup</h4>
+
+    <ul>
+        <li>(Secret for now)</li>
+    </ul>
+
+    <hr>
+
+    <footer>
+        <p>Last updated: June 13, 2025</p>
+        <p><a href="https://raw.githubusercontent.com/kevd-design/goals/main/goals.md" target="_blank">View Raw Markdown</a></p>
+    </footer>
+</body>
+</html>
