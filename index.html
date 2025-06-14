@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goal Journal</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Adding the missing classes from your style.css */
+
+    </style>
 </head>
 <body>
     <h2><span class="emoji">🎯</span> Goal Journal</h2>
@@ -15,37 +19,98 @@
 
     <h3><span class="emoji">🗓️</span> Daily Goals</h3>
 
-    <h4>2025-06-13</h4>
+    <h4>2025-06-14</h4>
 
     <p><strong>New Goals:</strong></p>
+    <ul>
+        <li><span class="emoji">⭐</span> Finish the homepage</li>
+        <li>Create the Services component</li>
+        <li>Create the Reviews component</li>
+        <li>Create the Footer component</li>
+    </ul>
+    
+    <div class="focus-shift">
+        <p><strong>Focus:</strong></p>
+        <ul>
+            <li>Finalize all homepage sections using simplified architecture</li>
+            <li>Maintain consistency with updated Hero and MobileNav patterns</li>
+            <li>Complete everything by 3:00 p.m.</li>
+        </ul>
+    </div>
+
+    <p><span class="emoji">🕒</span> <strong>Time-Based Schedule:</strong></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Task</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:00 – 10:30</td>
+                <td>Build Services component</td>
+                <td>Upcoming</td>
+            </tr>
+            <tr>
+                <td>10:30 – 12:00</td>
+                <td>Build Reviews component</td>
+                <td>Upcoming</td>
+            </tr>
+            <tr>
+                <td>12:00 – 13:00</td>
+                <td>Lunch break</td>
+                <td>–</td>
+            </tr>
+            <tr>
+                <td>13:00 – 15:00</td>
+                <td>Build Footer component, review page</td>
+                <td>Upcoming</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3><span class="emoji">✅</span> Goal History Log</h3>
+
+    <h4>2025-06-13</h4>
     <ul>
         <li><span class="emoji">⭐</span> Implement MVP approach with nearly static site (pulling only projects from Sanity)</li>
         <li><span class="emoji">✅</span> Simplify hero section to use static images and text</li>
         <li><span class="emoji">✅</span> Simplify MobileNav to use static content</li>
         <li><span class="emoji">✅</span> Begin building Projects module with Sanity integration</li>
-        <li><span class="emoji">🔄</span> Clean up complex code that is no longer needed (in progress)</li>
+        <li>Clean up complex code that is no longer needed (in progress)</li>
     </ul>
-    
-    <div class="journal-entry">
+
+    <div class="content-block journal-entry">
         <p><strong>Handwritten Journal Entry (10:00 AM):</strong></p>
         <p><em>"To go full simple, or part-way simple?"</em></p>
         
         <p>I've been weighing the tradeoffs between full simplification and a partial approach:</p>
         <ul>
-            <li>Full simplification would get the project out the door faster</li>
-            <li>This means making the hero static, even though most content is served by the headless CMS</li>
-            <li>For images, it makes sense to still pull from Sanity since their content delivery network would be superior to fully static images</li>
-            <li>I should keep most of the Sanity implementation as-is for images</li>
-            <li>For text that's already configured in the schema, it would be easier to keep using it but make it editable only by myself</li>
-            <li>So my approach is "more simple, but not fully static"</li>
-            <li>The main goal is to disconnect the hero from color mapping and just render the background image as-is</li>
-            <li>I can keep the optimized image and caching functionality, but don't need the decoding or ImageConfigurer components</li>
+            <li>Full simplification would get the project out the door faster
+                <ul>
+                    <li>This means making the hero static, even though most content is served by the headless CMS</li>
+                    <li>For images, it makes sense to still pull from Sanity since their content delivery network would be superior to fully static images</li>
+                    <li>I should keep most of the Sanity implementation as-is for images</li>
+                    <li>For text that's already configured in the schema, it would be easier to keep using it but make it editable only by myself</li>
+                </ul>
+            </li>
+            <li>So my approach is "more simple, but not fully static"
+                <ul>
+                    <li>The main goal is to disconnect the hero from color mapping and just render the background image as-is</li>
+                    <li>I can keep the optimized image and caching functionality, but don't need the decoding or ImageConfigurer components</li>
+                </ul>
+            </li>
         </ul>
         
         <p>This hybrid approach will maintain performance benefits while reducing complexity.</p>
     </div>
     
-    <div class="focus-shift">
+    <div class="content-block focus-shift">
         <p><strong>Focus Shift:</strong></p>
         <ul>
             <li>Pivoting from full CMS-driven approach to a simpler MVP with limited Sanity integration</li>
@@ -54,7 +119,7 @@
         </ul>
     </div>
     
-    <div class="progress-update">
+    <div class="content-block progress-update">
         <p><strong>Progress Update (Morning):</strong></p>
         <ul>
             <li><strong>Simplified the Hero Component</strong>
@@ -103,7 +168,7 @@
         <li>The hybrid approach (static content with Sanity-sourced images) offers the best balance between simplicity and performance</li>
     </ul>
 
-    <p><span class="emoji">🕒</span> <strong>Time-Based Schedule (Updated):</strong></p>
+    <p><span class="emoji">🕒</span> <strong>Time-Based Schedule:</strong></p>
 
     <table>
         <thead>
@@ -122,17 +187,17 @@
             <tr>
                 <td>12:00 – 13:00</td>
                 <td>Lunch break</td>
-                <td>-</td>
+                <td>–</td>
             </tr>
             <tr>
                 <td>13:00 – 16:00</td>
                 <td>Start building Projects module with Sanity integration</td>
-                <td>Upcoming</td>
+                <td><span class="emoji">✅</span> Completed</td>
             </tr>
             <tr>
                 <td>16:00 – 17:00</td>
                 <td>Clean up complex/unused code from previous approach</td>
-                <td>Upcoming (partly done in morning)</td>
+                <td><span class="emoji">⚠️</span> In progress</td>
             </tr>
         </tbody>
     </table>
@@ -214,7 +279,7 @@
 
     <hr>
 
-    <h3 id="-fail-to-succeed-log"><span class="emoji">🚫</span> Fail to Succeed Log</h3>
+    <h3 id="-fail-to-succeed-log"><span class="emoji">❌</span> Fail to Succeed Log</h3>
 
     <h4>2025-06-12: MobileNav Implementation Challenges</h4>
 
@@ -263,7 +328,7 @@
 
     <ul>
         <li>A structured journaling system to set and track personal and professional goals.</li>
-        <li>Daily goals are written with ChatGPT and archived to <a href="https://goals.kevd.design">goals.kevd.design</a>.</li>
+        <li>Daily goals are written with ChatGPT and archived to the site.</li>
         <li>Each day's entry becomes a version-controlled snapshot, ensuring clarity and traceability.</li>
         <li>Enables mobile, voice-based journaling and goal-setting during daily routines like walking the dog.</li>
         <li>Acts as both a reference for ChatGPT and a durable accountability mechanism.</li>
@@ -278,7 +343,7 @@
     <hr>
 
     <footer>
-        <p>Last updated: June 13, 2025</p>
+        <p>Last updated: June 14, 2025</p>
     </footer>
 </body>
 </html>
